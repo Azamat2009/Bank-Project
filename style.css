@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+}
+
+#app {
+  margin: 100px auto;
+}
+.menu {
+  text-decoration: none;
+  margin: 0 auto;
+  color: black;
+  text-transform: capitalize;
+}
+
+.add {
+  width: 100%;
+  max-width: 1920px;
+  margin: 100px auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 50%;
+  height: 400px;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container input {
+  width: 340px;
+  height: 50px;
+  border-radius: 15px;
+  padding: 25px;
+  border: 1px solid black;
+}
+
+input::placeholder {
+  font-weight: 549;
+  color: black;
+}
+
+#addBtn {
+  border: none;
+  width: 340px;
+  height: 50px;
+  color: white;
+  background-color: #0047FF;
+  text-align: center;
+  border-radius: 15px;
+}

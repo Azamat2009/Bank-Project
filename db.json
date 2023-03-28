@@ -1,0 +1,155 @@
+{
+  "users": [
+    {
+      "email": "daler@gmail.com",
+      "name": "Daler",
+      "surname": "Sharifkulov",
+      "password": "3545343sdadsadsadsad",
+      "id": 1
+    },
+    {
+      "email": "kamron@gmail.com",
+      "name": "Kamron",
+      "surname": "Xasanzoda",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "email": "nazif@gmail.com",
+      "name": "Nazif",
+      "surname": "Jamshedov",
+      "password": "4444",
+      "id": 3
+    }
+  ],
+  "cards": [
+    {
+      "user_id": 3,
+      "name": "Alisher",
+      "currency": "USD",
+      "total": 0,
+      "id": 2
+    },
+    {
+      "user_id": 3,
+      "name": "Zarina",
+      "currency": "USD",
+      "total": -400,
+      "id": 4
+    }
+  ],
+  "transactions": [
+    {
+      "user_id": 3,
+      "data": "2023-02-27",
+      "card_name": "1",
+      "category": "food",
+      "total": "400",
+      "id": 1
+    },
+    {
+      "user_id": 3,
+      "data": "2023-02-27",
+      "card_name": "2",
+      "category": "food",
+      "total": "400",
+      "id": 2
+    },
+    {
+      "user_id": 3,
+      "data": "2023-02-27",
+      "card_name": "2",
+      "category": "food",
+      "total": "400",
+      "id": 3
+    },
+    {
+      "user_id": 3,
+      "data": "2023-02-27",
+      "card_name": "1",
+      "category": "home",
+      "total": "400",
+      "id": 4
+    },
+    {
+      "user_id": 3,
+      "data": "2023-02-27",
+      "card_name": "1",
+      "category": "home",
+      "total": "400",
+      "id": 5
+    },
+    {
+      "user_id": 3,
+      "data": "2023-02-27",
+      "card_name": "1",
+      "category": "home",
+      "total": "400",
+      "id": 6
+    },
+    {
+      "user_id": 3,
+      "data": "2023-02-27",
+      "card_name": "1",
+      "category": "home",
+      "total": "400",
+      "id": 7
+    },
+    {
+      "user_id": 3,
+      "data": "2023-02-27",
+      "card_name": "3",
+      "category": "home",
+      "total": "15000",
+      "id": 8
+    },
+    {
+      "user_id": 3,
+      "data": "2023-02-27",
+      "card_name": "4",
+      "category": "home",
+      "total": "15000",
+      "id": 9
+    },
+    {
+      "user_id": 3,
+      "data": "2023-02-27",
+      "card_name": "4",
+      "category": "food",
+      "total": "15000",
+      "id": 10
+    },
+    {
+      "user_id": 3,
+      "data": "2023-02-27",
+      "card_name": "4",
+      "category": "home",
+      "total": "15000",
+      "id": 11
+    },
+    {
+      "user_id": 3,
+      "data": "2023-02-27",
+      "card_name": "4",
+      "category": "food",
+      "total": "15000",
+      "id": 12
+    },
+    {
+      "user_id": 3,
+      "data": "2023-02-27",
+      "card_name": "4",
+      "category": "food",
+      "total": "400",
+      "id": 13
+    },
+    {
+      "user_id": 3,
+      "data": "2023-02-27",
+      "card_name": "2",
+      "category": "food",
+      "total": "400",
+      "id": 14
+    }
+  ]
+}

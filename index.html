@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml"
+		href="https://sun9-68.userapi.com/impg/0HzgJjQsjT_jrC5z6ZBYJR6omnn7R1oTwKm4KA/L_9_sN5ihKw.jpg?size=130x76&quality=95&sign=5a01d9c15803d59ed14236bb9ba3df51&c_uniq_tag=j4LQAa9SXyAVxQ2CfAiCQMGE9Oq8JtCqNBwvHJHR3jA&type=album" />
+	<link rel="stylesheet" href="/scss/style.scss" />
+	<link rel="stylesheet" href="/scss/header.scss" />
+	<link rel="stylesheet" href="/scss/transactions.scss" />
+	<link rel="stylesheet" href="./style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Vite App</title>
+</head>
+
+<body>
+	<div id="app">
+		<div class="wrapper">
+			<h1>HOME</h1>
+			
+			<h3>Мои кошельки</h3>
+			<div class="card-container"></div>
+		</div>
+			<div class="transactioons">
+				<h2 class="transactions__title">Последние транзакции</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Отправлено с кошелька</th>
+							<th>Категория</th>
+							<th>Сумма транзации</th>
+							<th>Когда</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+	</div>
+	<div class="modal">
+		<h2>Вы точно хотите покинуть ?</h2>
+		<div class="btns">
+			<button class="btnOut">Нет</button>
+			<button class="btnExit">Да</button>
+		</div>
+	</div>
+	<script type="module" src="/main.js"></script>
+</body>
+
+</html>

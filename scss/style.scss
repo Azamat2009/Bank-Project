@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body, #app {
+    margin: 0 auto;
+    max-width: 1920px;
+    position: relative;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+:root {
+    --blue-main: #0047FF
+}
+
+.center {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 200px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 450px;
+    margin-bottom: 40px;
+
+    input, #currency, select {
+        all: unset;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 20px 25px;
+        text-align: start;
+        width: 100%;
+
+        &::placeholder {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+        }
+    }
+
+    button {
+        all: unset;
+        padding: 20px 25px;
+        background-color: var(--blue-main);
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    #currency {
+        width: 340px;
+        padding: 25px;
+    }
+    
+}
+
+.card {
+    color: white;
+    width: 270px;
+    height: 170px;
+    border-radius: 15px;
+    background: linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h1,
+h3 {
+    padding: 10px 20px;
+    color: white;
+}
+
+#a {
+    color: #0047FF;
+}
+
+.i {
+    padding: 10px 10px;
+    width: 90%;
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 400px;
+    background-color: green;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body .i .container {
+    display: flex;
+}
+
+.card {
+    width: 400px;
+    height: 300px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.wrapper {
+    width: 70%;
+    margin: 40px auto;
+
+    h3 {
+        margin-bottom: 20px;
+    }
+    button {
+        all: unset;
+        background-color: #0047FF;
+        color: white;
+        font-size: 18px;
+        padding: 18px 100px;
+        border-radius: 14px;
+        margin-left: 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        &:active {
+            scale: .8;
+        }
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        padding-left: 20px;
+    
+        .card-item {
+            width: 75%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            border-radius: 30px;
+            background: linear-gradient(84.37deg, #5F0A87 2.27%, #A4508B 92.26%);
+            padding: 20px;
+            height: 160px;
+    
+    
+            h2, span {
+                color: white;
+            }
+            h3 {
+                transform: translate(-20px , 0px);
+            }
+        }
+    
+    }
+}

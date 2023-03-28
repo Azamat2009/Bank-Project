@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/scss/header.scss" />
+	<link rel="stylesheet" href="/scss/style.scss" />
+
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="app">
+		<center>
+		</center>
+
+		<div class="wrapper">
+			<h3>Мои кошельки</h3>
+			<div class="card-container"></div>
+			<a href="/pages/addwallet.html">
+				<button>Добавить кошелек</button>
+			</a>
+		</div>
+		<div class="modal">
+			<h2>Вы точно хотите покинуть ?</h2>
+			<div class="btns">
+				<button class="btnOut">Нет</button>
+				<button class="btnExit">Да</button>
+			</div>
+		</div>
+	</div>
+
+	<script type="module">
+		import { header } from "/modules/header";
+		import {cardReload} from '/modules/ui'
+		import { getData } from '/modules/HTTP.reuest'
+
+		//////////////////////
+		let user = JSON.parse(localStorage.getItem('user'))
+		if (!user) location.assign('/pages/login.html')
+		header()
+		//////////////////////
+
+		let cardCont = document.querySelector('.card-container')
+
+		getData("/cards?user_id=" + user.id)
+			.then(res => cardReload(res, cardCont))
+
+    </script>
+</body>
+
+</html>

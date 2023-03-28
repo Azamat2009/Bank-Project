@@ -1,0 +1,95 @@
+.header {
+    width: 100%;
+    padding: 30px 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #F0F0F0;
+    font-family: sans-serif;
+
+    .left_side,
+    .right_side {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .left_side span,
+    .right_side span {
+        transition: .5s ease;
+        cursor: pointer;
+    }
+
+    .left_side span:hover,
+    .right_side span:hover {
+        color: rgb(68, 68, 68);
+    }
+
+    .right_side img {
+        cursor: pointer;
+    }
+}
+
+
+.modal {
+    display: none;
+    width: 600px;
+    height: 330px;
+    background: #80c7eb;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    transition: 1s ease;
+    padding-top: 25px;
+    padding-left: 30px;
+
+    h2 {
+        font-size: 30px;
+        color: white;
+        font-family: sans-serif;
+    }
+
+
+    .btns {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        margin-top: 210px;
+        margin-right: 40px;
+    }
+
+    .btnOut {
+        all: unset;
+        padding: 10px 45px;
+        text-align: center;
+        background-color: blue;
+
+        color: white;
+
+        font-size: 20px;
+        font-family: sans-serif;
+        cursor: pointer;
+    }
+
+    .btnExit {
+        all: unset;
+        padding: 10px 45px;
+        text-align: center;
+        background-color: red;
+
+        color: white;
+
+        font-size: 20px;
+        font-family: sans-serif;
+
+        margin-left: 20px;
+        cursor: pointer;
+    }
+}
